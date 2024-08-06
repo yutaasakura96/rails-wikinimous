@@ -1,0 +1,16 @@
+<div class='container'>
+<h2 class='fs-2 text-primary'><%= @article.title %></h2>
+<p class='fs-4'><%= @article.content %></p>
+
+<h2 class='fs-2 text-primary'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, quis.</h2>
+<p class='fs-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos hic vero, officiis et vitae tempora, consequatur iusto dolorem ipsa laborum ex voluptatibus enim sapiente! Atque nam, ipsa excepturi non quis quo ab iste error blanditiis vero eveniet, voluptas dolorum consequuntur.</p>
+</div>
+<div class='container d-flex justify-content-between'>
+<%= link_to 'Back to list', articles_path, class: 'btn btn-primary' %>
+<%= link_to 'Update article', edit_article_path(@article), class: 'btn btn-warning' %>
+<%= link_to "Delete",
+    article_path(@article),
+    method: :delete,
+    data: { confirm: "Are you sure?" },
+    class: 'btn btn-danger' %>
+</div>

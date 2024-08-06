@@ -266,7 +266,7 @@ DEPENDENCIES
   capybara
   debug
   error_highlight (>= 0.4.0)
-  faker
+  faker (~> 3.4.2)
   importmap-rails
   jbuilder
   puma (>= 5.0)
